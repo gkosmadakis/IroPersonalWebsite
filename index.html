@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ 
+<!--FOR carousel DESIGN -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- LOAD CSS FOR THE CONTACT PAGE-->
+<link href="ihover.css" rel="stylesheet">
+
+<!--Load Bootstrap css-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--load font awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- LOAD MY CSS FILE-->
+	<link rel="stylesheet" href="Home.css">
+	
+<script 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
+
+<!--FOR carousel DESIGN -->
+<script 
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+</script>
+
+ <style>
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+		width: 70%;
+		height: 450px;
+		max-height: 450px;
+		margin: auto;
+}
+  
+h1 , h5 {
+		color: #FFFFFF;
+}
+
+body {
+    background-color:#F0FFFF;
+	width:100%;
+	margin:auto;
+	
+}
+ </style>
+
+
+<script>
+$(".light-box box-hover").mouseover(function() {
+    $(this).animate({ marginTop: 300 });
+})
+</script>
+
+				<!-- THIS IS HOW I AM SHOWING EACH PAGE WHEN PRESSING A BUTTON. JQUERY WITH HIDE/SHOW FUNCTION-->
+<script>		
+	$(document).ready(function(){
+	$("#aboutContent,#projectsContent,#techniquesContent,#contactContent,#under,#post,#res").hide();
+		$("#home").click(function(){
+			$("#aboutContent,#projectsContent,#techniquesContent,#contactContent,#under,#post,#res").hide();        
+			$("#homeContent").show();
+			
+		});
+		$("#about").click(function(){
+			$("#homeContent,#projectsContent,#techniquesContent,#contactContent,#under,#post,#res").hide();
+			$("#aboutContent").show();
+		});
+		$("#projects").click(function(){
+			$("#homeContent,#aboutContent,#techniquesContent,#contactContent,#under,#post,#res").hide();
+			$("#projectsContent").show();
+		});
+		$("#techniques").click(function(){
+			$("#homeContent,#aboutContent,#projectsContent,#contactContent,#under,#post,#res").hide();
+			$("#techniquesContent").show();
+		});
+		$("#contact").click(function(){
+			$("#homeContent,#aboutContent,#projectsContent,#techniquesContent,#under,#post,#res").hide();
+			$("#contactContent").show();
+		});
+		
+		<!-- This is the script to show the elements from the dropdown menu of the projects button-->
+		$("#undergraduate").click(function(){
+			$("#homeContent,#aboutContent,#projectsContent,#techniquesContent,#contactContent,#post,#res").hide();
+			$("#under").show();
+		});
+		$("#postgraduate").click(function(){
+			$("#homeContent,#aboutContent,#projectsContent,#techniquesContent,#contactContent,#under,#res").hide();
+			$("#post").show();
+		});
+		$("#research").click(function(){
+			$("#homeContent,#aboutContent,#projectsContent,#techniquesContent,#contactContent,#under,#post").hide();
+			$("#res").show();
+		});
+	});
+</script>
+
+
+
+</head> 
+
+<body>
+
+
+
+					<!-- START OF HEADER -->
+		<div id = "header" >
+
+				<h1   align="center" >Science Creating Tomorrow's world </h1>
+				<h5 align="right" > - Research is what I am doing when I don't know what I am doing! (Wernher Von Brown) </h5>
+
+			<div class= "col-md-12" id="iamgeButtons">
+				<a href= "index.html"> <img height="80px;" width="80px;"  src ="img/logo.jpg" alt="image"   cursor: pointer;> </a>
+
+				<div class= "btn-group">
+						<button type="button" class="btn btn-primary btn-responsive" id="home" >Home</button>
+						<button type="button" class="btn btn-primary btn-responsive" id="about" >About Me</button>
+					
+					<div class="btn-group ">
+						<button type="button" data-toggle="dropdown" class="btn btn-primary btn-responsive dropdown-toggle">Projects <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a  id = "undergraduate">Undergraduate</a></li>
+							<li><a  id = "postgraduate">Postgraduate</a></li>
+							<li><a  id = "research">Research</a></li>
+							<li class="divider"></li>
+							<li><a id = "projects">Synopsis</a></li>
+						</ul>
+					</div>
+						<button type="button" class="btn btn-primary btn-responsive" id="techniques" >Techniques </button>
+						<button type="button" class="btn btn-primary btn-responsive" id="contact" >Contact</button>
+				</div>
+				
+			</div>
+			
+		</div>
+
+					<!-- END OF HEADER -->
+			
+			
+					<!-- START of HOME PAGE-->		
+	<div id = "homeContent" class="page-wrap">
+
+		<h4> Welcome to Science Lab!<hr>  </h4>
+
+				<p> Here you can find information about myself and my work. <br> Have a look around and if you are curious, you can contact me! 
+				</p>
+					<br><br>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel"  >
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+					<div class="item active">
+					  <img src="img/science.jpg" alt="image">
+					</div>
+
+					<div class="item">
+					  <img src="img/cell_structure.jpg" alt="image" >
+							<div class="carousel-caption">
+								<h3>Cell Structure</h3>
+								<p>Common feature of all cells.</p>
+							</div>
+					</div>
+
+					<div class="item">
+					  <img src="img/images.jpg" alt="image">
+							<div class="carousel-caption">
+								<h3>Chromosomes</h3>
+								<p> A coiled thread of DNA found in the nucleus of a cell.</p>
+							</div>
+					</div>
+
+					<div class="item">
+					  <img src="img/zygote.jpg" alt="image">
+							<div class="carousel-caption">
+								<h3>Zygote</h3>
+								<p>50% DNA of Dad. 50% DNA of Mom. 100% Human.</p>
+							</div>
+					</div>
+					<div class="item">
+					  <img src="img/cell_culture.jpg" alt="image">
+							<div class="carousel-caption">
+								<h3>Cell Structure</h3>
+								<p>Cells are grown under control conditions.</p>
+							</div>
+					</div>
+					<div class="item">
+					  <img src="img/virus.jpg" alt="image">
+							<div class="carousel-caption">
+								<h3>Red Blood Cells with Virus</h3>
+								<p>Love is like a virus! It can happen to anybody at any time.</p>
+							</div>
+					</div>
+			</div>
+
+				  <!-- Left and right controls -->
+					 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+					 </a>
+					 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+					 </a>
+		</div>
+
+
+	</div>
+							<!-- END of HOME PAGE-->
+							
+							<!-- START OF ABOUT PAGE-->
+		  
+		<div id= "aboutContent"  class="page-wrap" style="padding-top:300px;">
+				<h3 align="center"><u> A few things about myself</u></h3>
+					<div class= "col-md-3 " style="padding-left:1px;">
+						 <p style= "font-size:16px;">  <i>Studies </i> </p>
+						 <p> 
+							I am Iro, my studies include a BSc in Biological Sciences in Heriot-Watt University in which I had to deal with different modules and an 
+							Honours project. Also I have done an MSc in medical Genetics in University of Glasgow where I was involved in different modules such as 
+							cytogenetic, 
+						</p>
+					</div>
+
+					<div class= "col-md-3" style="padding-left:1px;">
+						<p> 
+								molecular biology, biochemistry, clinical skills.
+								My dissertation was about epithelial to mesenchymal transition in correlation with cancer.
+						</p>
+								<img src=img/aboutme.gif style="width:140px;height:60px;">
+					</div>
+
+					<div class= "col-md-3" style="padding-left:1px;">
+
+
+						<p style= "font-size:16px;"> <i>Working </i> </p>
+						<p> 
+							Currently I am working as associate scientist in Bioreliance which I perform assays and general laboratory
+							procedures as required. The main area of work includes molecular, microbiology and sequencing assays to perform to the relevant 
+							regulatory and safety standards. Require to document all work perform and work to GLP 
+
+						</p>
+					</div>
+						 
+					<div class= "col-md-3" style="padding-left:1px;">
+						<p>
+							and GMP standards through data generation, review,  documentation and record keeping.
+							In the past when I had finished my MSc I started working in university of Glasgow as teaching assistant in which I had to take molecular biology 
+							tutorial classes and demonstrate to undergraduate students in practical laboratories in the Department of Biological Sciences.  
+						</p>
+					</div>
+
+		</div>
+
+							<!-- END OF ABOUT PAGE-->
+
+							<!-- START OF PROJECTS SYNOPSIS-->
+		<div id= "projectsContent"  class="page-wrap" style="padding-top:300px;">
+			<h3 align="center"> <u>Important Projects that helped me to be qualified Biologist</u> 
+				</h3>
+					<img src=img/iro.jpg alt="image" style="width:200px;height:100px;"/> <hr>
+
+				
+				<!-- START OF TABLE DATA-->		
+			<table style="width:100%">
+
+							<tr>
+								<td> 	
+									<div class="projectsLink"> 	<p class="studies"> Undergraduate Studies </p> </td>  
+										<td> 					<p class="studies"> Postgraduate Studies </a></p> </td>  
+										<td>					<p class="studies"> Research </a> </p> </td> 
+									</div>
+							</tr> 
+								<p><tr>
+								<td>-Statistic Analysis using SPSS </td> <td>-DNA extraction and sexing by PCR</td> <td>-Type 2 diabetes and obesity</td> 
+								</tr></p>
+								<p><tr>
+							<td> -HIV and new therapy </td> <td>-Dystrophin Immunohistochemistry</td> <td>-Molecular Pathways that involved in thyroid cancer formation</td> 
+							</tr> </p>
+							<p><tr>
+							<td><u>Honours Project </u> </td>  <td>-PCR-RFLP Assay Design and validation</td> 
+							</tr></p>
+							<p><tr>
+							<td>-Temperature sensitivity of Saccharomyces </td>  <td>-ARMS testing for cystic fibrosis</td> 
+							</tr></p>
+							<p><tr>
+							<td>Cereviciae in Prs1Δ and Prs3Δ strain</td> <td>-Mutation identification by sequencing BRCA2</td> 
+							</tr></p>
+			</table>
+							<!-- END OF TABLE DATA-->	
+		</div>
+						<!-- END OF PROJECTS SYNOPSIS-->
+						
+						
+						
+					<!-- START OF TECHNIQUES PAGE-->
+		<div id= "techniquesContent"  class="page-wrap" style="padding-top:300px;">
+							
+							<h3 align="center" > <u> Methods in Cellular and Molecular Biology </u> </h3>
+
+							<p> These video collection demonstrates how to execute basic techniques commonly used in cellular and molecular biology</p>   <hr>
+
+
+			<div class="row" >
+						<div class="col-md-3" >
+							<p class= "videoLabel"> PCR Reaction</p> 
+							<div id="bg_container" >
+								<iframe width="250" height="150" src="https://www.youtube.com/embed/NYlT3f-MZ5o" frameborder="0" allowfullscreen></iframe> 
+							</div>
+						</div>
+
+
+
+					<div class="col-md-3">
+						<p class= "videoLabel">  ELISA</p>
+							<div id="bg_container">
+								<iframe width="250" height="150" src="https://www.youtube.com/embed/RRbuz3VQ100" frameborder="0" allowfullscreen></iframe>
+							</div>
+					</div>
+
+
+					<div class="col-md-3">
+						<p class= "videoLabel">  Real-Time PCR with Qiagility</p>
+							<div id="bg_container">
+								<iframe width="250" height="150" src="https://www.youtube.com/embed/T4evmJfVrDw" frameborder="0" allowfullscreen></iframe>
+							</div>
+					</div>
+
+
+					<div class="col-md-3">
+						<p class= "videoLabel"> Plasmid DNA Purification</p>
+							<div id="bg_container">
+							  <iframe width="250" height="150" src="https://www.youtube.com/embed/Et2NaRhzdvw" frameborder="0" allowfullscreen></iframe>
+							</div>
+					</div>
+
+			</div>				
+		</div>
+						<!-- END OF TECHNIQUES PAGE-->
+
+						<!-- START OF CONTACT PAGE-->
+		<div id= "contactContent"  class="page-wrap" style="padding-top:300px;" >
+				<h3 align="center"><u> Contact Me!</u></h3> <br>
+				
+				<div class="row">
+					<div class="col-sm-6" style="padding-left:1px;">
+ 
+						<!-- normal -->
+							<div class="ih-item square effect4"><a href="#">
+								<div class="img"><img src="img/cell_phone.png" alt="img"></div>
+									<div class="mask1"></div>
+									<div class="mask2"></div>
+									<div class="info">
+										<h3>Phone</h3>
+										<p>0742 7608420</p>
+									</div></a>
+							</div>
+    <!-- end normal -->
+ 
+					</div>
+					
+					<div class="col-sm-6" style="padding-left:1px;">
+ 
+				<!-- colored -->
+						<div class="ih-item square colored effect4"><a href="mailto:z.kottaki91@gmail.com">
+							<div class="img"><img src="img/mail.jpg" alt="img"></div>
+							<div class="mask1"></div>
+							<div class="mask2"></div>
+							<div class="info">
+								<h3>E-mail</h3>
+								<p>z.kottaki91@gmail.com</p>
+							</div></a></div>
+				<!-- end colored -->
+ 
+					</div>
+
+
+						<div class="row">
+							<div class="social" style="float:right;">
+								<ul>
+							 
+									<li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+								</ul>
+
+							</div>
+						</div>
+				
+				</div>
+					
+		</div>
+
+							<!-- END of CONTACT-->
+
+							<!-- START of UNDERGRADUATE-->
+		<div id="under" class="page-wrap" style="padding-top:300px;" >
+							
+							<h3 align="center"> Undergraduate Studies</h3>
+							<p class="p"> <u>HPV-CERVICAL CANCER.</u> <br>
+								This project was to analyse statistical evidence about cancer of the cervix in European countries. To write how the cervical can examined, what 
+								vaccination has been found to prevent 
+								from some types of HPV and If you have cervical cancer what therapies can be done.  <br><hr>
+							</p>
+							<p>
+								<u>Listeria Monocytogenes- Description of the pathogen and the disease it causes.</u>
+								This project was to described listeria monocytogenes what are the sympotoms how illness can be caused by L.monocytogenes, how can be inserted into 
+								the food and what microbial tests 
+								can be used to identify and finay segest prevention strategy how to avoid L.monocytogenes to grow in foods. 
+							</p><br><hr>
+							<p>
+								<u>Blood Glucose Control</u> <br>
+								The purpose of this experiment is to ingest 75gr of glucose and after to see how quickly blood glucose changes. We had 31 studies which consisted of 
+								approximately 13 females and 18 
+								males’ subjects. Blood samples were drawn pre-ingestion the volunteers  have not eat at least 2 hours before the experiment after drinking 436 ml of 
+								water containing 75 gr of dissolved 
+								glucose and take blood samples in 30 min, 60 min and 90 min. 
+							</p><br><hr>
+							<p>
+								<u>A search for multicopy suppressors of the temperature sensitivity of a Saccharomyces cerevisiae prs1Δ prs3Δ strain.</u> <br>
+								The aim of the study was to investigate if the PRS enzyme can be linked to the cell wall integrity pathway in Saccharomyces cerevisiae. This can be 
+								achieved by transforming a gene
+								bank into a yeast strain YN97-88 (prs1Δ prs3Δ) and searching for multicopy suppressors of temperature sensitivity. Then, the deletion of prs1Δ prs3Δ 
+								does not have severe effect on
+								yeast cells but has results in temperature sensitivity, a phenotype associated with impaired cell wall integrity signaling. Finally, the experiment 
+								showed that ALG6 gene is one
+								possible suppressor. This is connected with temperature sensitivity and has the ability to distribute the cell wall composition and integrity of S. 
+								cerevisiae.
+							</p>
+		</div>
+							<!-- END of UNDERGRADUATE-->
+							
+							<!-- START of POSTGRADUATE-->
+			<div id= "post" class="page-wrap" style="padding-top:300px;">
+			
+				<h3 align="center"> Postgraduate Studies</h3>
+					<p class="p"> 1.<u>Immunohistochemistry (IHC):</u> To test the presence of dystrophin protein in sections of human musclle tissue. IHC uses antibodies 
+						to direct a staiming process to particular antigens. In this experiment used anti-dystrophin antibody on normal human muscle tissue 
+						and specific antibody will bind to dystophin If it is present in the tissue.<br><br>
+						2.<u>PCR-RFLP assay design and validation:</u>
+						To design and a test a PCR-based restriction fragment length polymorphism assay that could be used to detect the presence of a polymorphism
+						in individuals.<br><br>
+						3.<u>Mutation identification by sequencing(BRCA2):</u>
+						To use DNA sequencing output to characterise mutations in the BRCA2 gene and to generate a report.<br><br>
+						4.<u>DNA Extraction and sexing by PCR:</u>
+						The purpose of this experiment was to extract DNA from both whole human blood and blood spots on filter paper and to use PCR to determine 
+						the sex of the individuals from whom the blood was taken.For PCR amplification two primers are used each of which annealed to only one site
+						in the entire human genome, so the primer pair will amplify a single fragment of the genome.
+						In this 'sexing' PCR for a sample of male DNA expect to generate two different PCR products and for female should generate only 
+						X chromosome PCR product.<br><br>
+						5.<u>Dissertation project:</u>
+						The puprose of the project was to identify different transcription factors that are involved in signalling pathways and are correlate with
+						epithelial to mesenchymal transition in development of cancer. 
+					</p>
+			</div>
+						<!-- END of POSTGRADUATE-->
+						
+						<!-- START of RESEARCH-->
+		<div id = "res" class="page-wrap" style="padding-top:300px; ">
+			
+				<h3 align="center"> Research Studies</h3>
+					<p align="center"> Type 2 diabetes and obesity</p> <br>
+					<p class="p">
+			
+						<u>Research Background</u><br>
+						This project was on a new ENU model of Type 2 Diabetes and Obesity that had already been identified with 2 coding mutations the first aim of my project was to 
+						prove that there are no other mutations that account for the phenotype allowing a focus on the two candidate genes. This achieved by analysis of the sequence 
+						to identify mutations and polymorphisms and validation of any new mutations. The second aim was to understand at the physiological levels why the mice became 
+						obese so that further mechanistic work can be carried out.   
+						There are three mouse models of obesity and type 2 diabetes has been identified from the ENU Mutagenesis project, MRC Harwell. My project was focus in a mouse
+						model called “BIGBOY” that have been identified as obese and hyperglycaemic from the dominant ENU screen. BIGBOY (+/-) mice are insulin resistant, 
+						hyperleptinaemic and have an altered metabolic rate.
+						Genome analysis of BC1 DNA and subsequent SNP genotyping identified linkage to Chromosome 13 between 93.07 and 97.42 Mb for BIGBOY (+/-).  
+						Whole genome sequencing identified 3 coding  mutations of which 2 were validated. Single base changes resulting in missense amino acid substitutions 
+						were identified 2 genes in highly conserved residues. Genotyping has shown that both mutations are observed in BIGBOY (+/-).
+					</p><br> <hr>
+					<p>
+						<u>Design Primers</u> <br>
+						The first step of my project was to design primer and optimisation. Primers were designed using ExonPrimer (http://biotools.umassmed.edu/bioapps/primer3_www.cgi) 
+						for exons and flanking sequence in the regions of interest and the fragments amplified by PCR. 
+						After PCR amplification was carried out on template the F1 DNA strain control and H2O as a negative control. 
+						Because each gene has the ability to grow in different concentrations for these reason we used two different concentrations of MgCl2. 
+					</p><br>
+					 
+					<img src=img/gene.png style="width:80%;height:250px;padding-left:50px;">
+					<br> 
+					<p>
+						<u>Re-optimisation-PCR Gradient  </u> <br>
+						Some gene have not the ability to work in any conditions so for this genes we try the PCR gradient 
+						Gradient PCR was used in order to determine the optimal annealing temperature. Using the gradient function of the universal block, a gradient of 53 to 67°C 
+						was set.
+					</p>
+					 <br>
+					 <img src=img/pcr.png style="width:80%;height:500px;padding-left:50px;">
+		</div>
+								<!-- END of RESEARCH-->
+								
+								
+												<!-- THE FOOTER -->
+		<div class="col-md-12" id="footerContainer">
+							<div class="footer" align="center">
+									Copyright &#169; 2015 Designed and Developed by George Kosmadakis. All Rights Reserved.
+									
+							</div>
+		</div>
+	
+	
+</body>
+
+
+
+
+</html>
